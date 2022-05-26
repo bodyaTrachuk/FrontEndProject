@@ -79,7 +79,7 @@ const CardItem = ({
               type="text"
               value={toggle}
               onChange={(e) =>
-                setToggle(e.target.value < 0 ? 1 : e.target.value)
+                setToggle(+e.target.value < 0 ? 1 : +e.target.value)
               }
             />
             <span className="plus" onClick={plus}>
